@@ -39,6 +39,9 @@
     },
     "downlink": {
       "type": "string"
+    },
+    "order": {
+      "type": "biginteger"
     }
   }
 }

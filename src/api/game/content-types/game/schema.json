@@ -26,14 +26,26 @@
         "images"
       ]
     },
-    "downlink": {
-      "type": "string"
-    },
     "seo_key": {
       "type": "string"
     },
     "seo_desc": {
       "type": "string"
+    },
+    "types": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::type.type"
+    },
+    "order": {
+      "type": "biginteger",
+      "default": "0"
+    },
+    "strategies": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::strategy.strategy",
+      "mappedBy": "game"
     }
   }
 }
