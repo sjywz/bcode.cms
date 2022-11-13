@@ -23,8 +23,9 @@
     },
     "game": {
       "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::game.game"
+      "relation": "manyToOne",
+      "target": "api::game.game",
+      "inversedBy": "versions"
     },
     "order": {
       "type": "integer",

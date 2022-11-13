@@ -38,13 +38,19 @@
       "target": "api::type.type"
     },
     "order": {
-      "type": "biginteger",
-      "default": "0"
+      "type": "integer",
+      "default": 0
     },
     "strategies": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::strategy.strategy",
+      "mappedBy": "game"
+    },
+    "versions": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::version.version",
       "mappedBy": "game"
     }
   }

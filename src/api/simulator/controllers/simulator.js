@@ -16,7 +16,7 @@ module.exports = createCoreController(
         ctx.query = {
           ...params,
           populate: "deep",
-          sort: ['id:desc'],
+          sort: ['order:desc','id:desc'],
           "pagination[page]": Number(page),
           "pagination[pageSize]": Number(pageSize),
         };

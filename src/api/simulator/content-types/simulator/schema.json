@@ -15,14 +15,6 @@
     "name": {
       "type": "string"
     },
-    "support": {
-      "type": "enumeration",
-      "enum": [
-        "MAC",
-        "Windows",
-        "Ios"
-      ]
-    },
     "desc": {
       "type": "text"
     },
@@ -41,7 +33,11 @@
       "type": "string"
     },
     "order": {
-      "type": "biginteger"
+      "type": "integer",
+      "default": 0
+    },
+    "support": {
+      "type": "string"
     }
   }
 }

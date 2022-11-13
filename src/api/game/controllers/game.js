@@ -16,8 +16,11 @@ module.exports = createCoreController(
       if (page && pageSize) {
         ctx.query = {
           ...params,
-          populate: "deep",
-          sort: ['id:desc'],
+          populate: {
+            cover: true,
+            types: true,
+          },
+          sort: ['order:desc','id:desc'],
           "pagination[page]": Number(page),
           "pagination[pageSize]": Number(pageSize),
         };
@@ -29,7 +32,12 @@ module.exports = createCoreController(
       const { ...params } = ctx.query;
       ctx.query = {
         ...params,
-        populate: "deep",
+        populate: {
+          versions: true,
+          strategies: true,
+          cover: true,
+          types: true,
+        },
       };
       const { data } = await super.findOne(ctx);
       return {data: removeAttrsAndId(removeTime(data))};
