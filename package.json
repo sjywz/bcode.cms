@@ -18,6 +18,7 @@
     "react-dom": "^18.0.0",
     "react-router-dom": "^5.2.0",
     "strapi-plugin-populate-deep": "^3.0.1",
+    "strapi-provider-cloudflare-r2": "^0.3.0",
     "styled-components": "^5.2.1"
   },
   "author": {
