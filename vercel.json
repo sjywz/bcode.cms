@@ -1,4 +1,9 @@
 {
+  "buildCommand": "pnpm build",
+  "devCommand": "pnpm develop",
+  "installCommand": "pnpm install",
+  "framework": null,
+  "outputDirectory": "build",
   "version": 2,
   "builds": [
     {
